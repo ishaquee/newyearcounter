@@ -1,0 +1,120 @@
+body{
+    margin: 1px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+
+.title{
+    font-weight: 100;
+    font-size: 100px;
+    background-image: url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/02/Usign-Gradients-Featured-Image.jpg');
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+    animation: animate 5s ease forwards infinite;
+   -webkit-text-stroke:1px #000;
+}
+
+@keyframes animate {
+   from{
+       background-position: center 25%;
+   }
+   to{
+       background-position: center 70%;
+
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .title {
+       font-size: 80px;
+
+   }
+ }
+
+
+.glass-container{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(31px);
+    --webkit-backdrop-filter: blur(21px);
+    border: 1px solid rgba(255,255 ,255, 7);
+}
+
+.home{
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+input{
+    margin: 10px;
+    padding: 10px;
+    width: max-content;
+}
+
+.input-container{
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    max-width: 700px;
+}
+
+.output{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.box{
+    margin: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: turquoise;
+}
+
+.box > p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.timetext{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0; 
+    width: 100%;  
+   text-align: center;
+   font-weight: bolder;
+ }
